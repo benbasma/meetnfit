@@ -24,17 +24,17 @@ const Footer = () => {
           <FooterLinkswrapper>
             <FooterLinkItems>
               <FooterLinkTitle>A propos de nous</FooterLinkTitle>
-              <FooterLink to="/">A propos de nous</FooterLink>
-              <FooterLink to="/">A propos de nous</FooterLink>
-              <FooterLink to="/">A propos de nous</FooterLink>
-              <FooterLink to="/">A propos de nous</FooterLink>
+              <FooterLink to="/">Accueil</FooterLink>
+              <FooterLink to="/">Galerie</FooterLink>
+              <FooterLink to="/">Calendrier</FooterLink>
+              <FooterLink to="/">Actualités</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to="/">A propos de nous</FooterLink>
-              <FooterLink to="/">A propos de nous</FooterLink>
-              <FooterLink to="/">A propos de nous</FooterLink>
-              <FooterLink to="/">A propos de nous</FooterLink>
+              <FooterLinkTitle>Plus D'Infos</FooterLinkTitle>
+              <FooterLink to="/">Blog</FooterLink>
+              <FooterLink to="/">Réalisations</FooterLink>
+              <FooterLink to="/">Tarifs</FooterLink>
+              <FooterLink to="/">Services</FooterLink>
             </FooterLinkItems>
           </FooterLinkswrapper>
           <FooterLinkswrapper>
@@ -46,7 +46,7 @@ const Footer = () => {
               <FooterLink to="/">Destinations</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
+              <FooterLinkTitle>Réseaux sociaux</FooterLinkTitle>
               <FooterLink to="/">Instagram</FooterLink>
               <FooterLink to="/">Facebook</FooterLink>
               <FooterLink to="/">Youtube</FooterLink>
