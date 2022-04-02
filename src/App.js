@@ -11,7 +11,6 @@ function App() {
         <Route path="/" component={Home} exact />
         <Route path="/signin" component={SigninPage} exact />
       </Routes>
-      <Home />
     </Router>
   );
 }
