@@ -4,7 +4,7 @@ import { Chat, Channel, ChannelHeader, MessageInput, MessageList, Thread, Window
 import 'stream-chat-react/dist/css/index.css';
 import Navbar from '../Navbar';
 import Sidebar from '../SideBar';
-
+import '../Chat/StyledChat.css'
 
 const chatClient = StreamChat.getInstance('tg3kj42vtzru');
 
