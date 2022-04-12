@@ -4,24 +4,36 @@ import { Chat, Channel, ChannelHeader, MessageInput, MessageList, Thread, Window
 import 'stream-chat-react/dist/css/index.css';
 import Navbar from '../Navbar';
 import Sidebar from '../SideBar';
+import { useLocation } from "react-router-dom";
+
 import '../Chat/StyledChat.css'
 
-const chatClient = StreamChat.getInstance('tg3kj42vtzru');
 
+const ChatComponent = () =>{
+  let search =  useLocation().search;
+  let user = new URLSearchParams(search).get("user");
+  const chatClient = StreamChat.getInstance('tg3kj42vtzru');
+
+  chatClient.upsertUser({  
+    id: user, 
+    name:user, 
+    role: 'guest',  
+ }); 
+ 
 chatClient.connectUser(
   {
-    id: 'yassine',
-    name: 'yassine'
+    id: user,
+    name: user
   },
-  chatClient.devToken('yassine'),
+  chatClient.devToken(user),
 );
+
 const channel = chatClient.channel('messaging', 'MeetnFit', {
     // add as many custom fields as you'd like
 
     name: 'MeetnFit',
     members: ['Hamza'],
   });
-const ChatComponent = () =>{
     const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -42,6 +54,6 @@ const ChatComponent = () =>{
   </Chat>
     </div>
  
-)};
+)}; 
 
 export default ChatComponent;
