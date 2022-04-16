@@ -1,0 +1,94 @@
+
+.main{
+    background: black;
+    width: 100%;
+    height: 100%;
+
+}
+.container {
+
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 60% ;
+    margin: 20px auto;
+    padding: 20px 20px;
+    background-image: url(sp.jpg);
+
+
+
+}
+
+img{
+    height: 50%;
+    object-fit: cover;
+    justify-content:left;
+}    
+
+em {
+    font-weight: bold;
+    font-style: normal;
+    color: #f00;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-center{
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(64, 180, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: smaller;
+}
+input{
+   
+    width: 100%;
+    margin: 2rem auto ;
+    border: none;
+    padding-left: 0.5rem 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem;
+}
+select{
+    width: 100%;
+    margin: 2rem auto ;
+    border: none;
+    padding-left: 0.5rem 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem;
+}
+textarea{
+    width: 100%;
+    margin: 1rem auto ;
+    border: none;
+    padding-left: 0.5rem 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem;
+}
+label{
+    font-weight: bold;
+}
+button{
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem;
+}
+.btn btn-danger{
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem;
+}
+.ErrorMessage{
+      color: #f00;
+}
